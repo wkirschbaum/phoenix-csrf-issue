@@ -18,6 +18,8 @@ defmodule ExampleWeb.Router do
     pipe_through :browser
 
     get "/", PageController, :index
+
+    resources "/foos", FooController
   end
 
   # Other scopes may use custom stacks.
